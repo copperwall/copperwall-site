@@ -5,6 +5,7 @@ module.exports = {
     plugins: [
         'gatsby-plugin-emotion',
         'gatsby-transformer-remark',
+        'gatsby-plugin-react-helmet',
         {
             resolve: 'gatsby-plugin-typography',
             options: {
