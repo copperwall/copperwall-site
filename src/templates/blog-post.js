@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
+import { css } from '@emotion/core';
 import Layout from "../components/layout";
 
 export default ({ data }) => {
@@ -10,7 +11,10 @@ export default ({ data }) => {
       <Helmet>
         <title>{post.frontmatter.title}</title>
       </Helmet>
-      <article>
+      <article css={css`
+        padding-top: 40px;
+      `}>
+        {post.frontmatter.banner && <img src={post.frontmatter.banner} alt="banner" /> }
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
@@ -24,6 +28,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        banner
       }
     }
   }
