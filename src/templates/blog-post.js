@@ -14,7 +14,10 @@ export default ({ data }) => {
       <article css={css`
         padding-top: 40px;
       `}>
-        {post.frontmatter.banner && <img src={post.frontmatter.banner} alt="banner" /> }
+        <div>
+          {post.frontmatter.banner && <img src={post.frontmatter.banner} alt="banner" /> }
+          {post.frontmatter.bannerCredit && <p style={{textAlign: 'center'}}>{post.frontmatter.bannerCredit}</p> }
+        </div>
         <h1>{post.frontmatter.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
@@ -29,6 +32,7 @@ export const query = graphql`
       frontmatter {
         title
         banner
+        bannerCredit
       }
     }
   }
