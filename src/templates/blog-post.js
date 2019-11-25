@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { Helmet } from "react-helmet";
+import SEO from '../components/seo';
 import { css } from '@emotion/core';
 import Layout from "../components/layout";
 
@@ -8,9 +8,7 @@ export default ({ data }) => {
   const post = data.markdownRemark;
   return (
     <Layout>
-      <Helmet>
-        <title>{post.frontmatter.title}</title>
-      </Helmet>
+      <SEO title={post.frontmatter.title} />
       <article css={css`
         padding-top: 40px;
       `}>

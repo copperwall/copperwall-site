@@ -1,6 +1,9 @@
 module.exports = {
     siteMetadata: {
-        title: 'Copperwall Blog'
+        title: 'Copperwall Blog',
+        rootUrl: "https://www.copperwall.dev",
+        description: "Just some stuff",
+        author: "Chris Opperwall"
     },
     plugins: [
         'gatsby-plugin-emotion',
