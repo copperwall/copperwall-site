@@ -13,6 +13,7 @@ module.exports = {
             options: {
               plugins: [
                 'gatsby-remark-embed-gist',
+                `gatsby-plugin-netlify`,
                 {
                   resolve: `gatsby-remark-prismjs`,
                   options: {
