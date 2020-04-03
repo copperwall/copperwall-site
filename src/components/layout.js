@@ -17,7 +17,9 @@ export default ({ children }) => (
   >
     <Header />
     <div>
-      {children}
+      <main>
+        {children}
+      </main>
       <hr />
       <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
         <img
