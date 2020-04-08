@@ -21,10 +21,10 @@ export default () => (
           align-items: center;
         `}
       >
-        <Link to={`/`}>
+        <Link to="/">
           <h3>{data.site.siteMetadata.title}</h3>
         </Link>
-        <Link to={`/about`}>About</Link>
+        <Link to="/about">About</Link>
       </header>
     )}
   />
