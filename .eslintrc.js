@@ -1,6 +1,11 @@
 module.exports = {
   parser: "babel-eslint", // Specifies the ESLint parser
-  extends: ["eslint:recommended", "plugin:react/recommended", "prettier"],
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+  ],
   settings: {
     react: {
       version: "detect",
@@ -10,7 +15,7 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  plugins: ["react"],
+  plugins: ["react", "jsx-a11y"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
