@@ -33,7 +33,23 @@ function Header() {
           {Array(getHeartPoints()).fill(<HeartIcon />)}
         </span>
       </div>
-      <h2>@copperwall</h2>
+      <div
+        css={css`
+          display: flex;
+          max-width: 25rem;
+          justify-content: space-between;
+        `}
+      >
+        <h2>@copperwall</h2>{" "}
+        <span>
+          <a href="https://github.com/copperwall">
+            <i className="nes-icon github" />
+          </a>{" "}
+          <a href="https://twitter.com/copperwall">
+            <i className="nes-icon twitter" />
+          </a>
+        </span>
+      </div>
     </section>
   );
 }
