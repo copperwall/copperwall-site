@@ -2,6 +2,7 @@ module.exports = {
   parser: "babel-eslint", // Specifies the ESLint parser
   extends: [
     "eslint:recommended",
+    "standard",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
     "prettier",
@@ -14,6 +15,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    node: true,
   },
   plugins: ["react", "jsx-a11y"],
   parserOptions: {

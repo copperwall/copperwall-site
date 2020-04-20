@@ -1,17 +1,17 @@
 import React from "react";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 import { css } from "@emotion/core";
 
 import Header from "./header";
 import { rhythm } from "../utils/typography";
 
-export default function Layout({ children }) {
+export default function Layout({ children, maxWidth }) {
   return (
     <div
       css={css`
         margin-left: auto;
         margin-right: auto;
-        max-width: ${rhythm(30)};
+        max-width: ${maxWidth || rhythm(35)};
         padding: ${rhythm(2)};
         padding-top: ${rhythm(1.5)};
         line-height: ${rhythm(1.2)};
@@ -34,5 +34,5 @@ export default function Layout({ children }) {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired
-}
+  children: PropTypes.node.isRequired,
+};
