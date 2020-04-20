@@ -62,6 +62,13 @@ function Container({ children }) {
           margin-bottom: 2rem;
         }
 
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+          .nes-container {
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+          }
+        }
+
         margin-bottom: 2rem;
       `}
       className="nes-container"
@@ -82,7 +89,7 @@ export default function AboutMe({ data }) {
     },
   } = data;
   return (
-    <Layout maxWidth={"auto"}>
+    <Layout maxWidth={"unset"} mobilePadding="0">
       <Helmet
         style={[
           {
