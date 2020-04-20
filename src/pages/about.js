@@ -38,6 +38,7 @@ function Header() {
           display: flex;
           max-width: 25rem;
           justify-content: space-between;
+          flex-wrap: wrap;
         `}
       >
         <h2>@copperwall</h2>{" "}
