@@ -12,7 +12,7 @@ export default function Layout({
 }) {
   return (
     <div
-      css={css`
+      className={css`
         margin-left: auto;
         margin-right: auto;
         max-width: ${maxWidth};
@@ -36,6 +36,9 @@ export default function Layout({
             style={{ borderWidth: 0 }}
             src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
           />
+        </a>
+        <a rel="me" href="https://hachyderm.io/@copperwall">
+          Mastodon
         </a>
       </div>
     </div>
