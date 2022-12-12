@@ -12,7 +12,7 @@ export default function Layout({
 }) {
   return (
     <div
-      className={css`
+      css={css`
         margin-left: auto;
         margin-right: auto;
         max-width: ${maxWidth};
